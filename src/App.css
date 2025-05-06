@@ -63,7 +63,7 @@
    
   .res-logo{
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     border-radius: 8px;
   }
 
@@ -72,12 +72,66 @@
     margin-top: 10px;
     font-size: 16px; 
     color: #333; 
-   
     line-height: 1.2; 
   }
 
-  .search{
-    padding: 10px;
+ 
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; 
+    outline: none;
   }
+  .search-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+}
+
   
-  
+  .search-icon {
+    font-size: 18px;
+    
+  }
+  .search-btn .search-icon {
+    margin-right: 8px; 
+    font-size: 18px;   
+  }
+ 
+  .search-container{
+      width: 500px;
+      margin: auto;
+      position: relative;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .suggestion-box{
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .suggestionList{
+    border-bottom: 1px solid #dcdcdc;
+    padding: 8px 16px 8px 16px;
+  }
